@@ -15,6 +15,7 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 use InnoShop\Front\Requests\RegisterRequest;
 use InnoShop\Front\Services\AccountService;
+use Laravel\Socialite\Facades\Socialite;
 use Throwable;
 
 class AuthController extends BaseController
@@ -57,4 +58,13 @@ class AuthController extends BaseController
             return json_fail($e->getMessage());
         }
     }
+
+    // public function google_redirect() {
+    //     return Socialite::driver('google')->redirect();
+    // }
+
+    // public function google_callback(){
+    //     $googleUser = Socialite::driver('google')->user();
+    //     dd($googleUser);
+    // }
 }

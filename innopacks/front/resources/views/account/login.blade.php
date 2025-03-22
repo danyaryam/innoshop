@@ -36,6 +36,7 @@
           __('front/login.no_account') }}
             <i class="bi bi-arrow-up-right-square"></i></a>
         </div>
+        
       </form>
 
       @include('account/_social')

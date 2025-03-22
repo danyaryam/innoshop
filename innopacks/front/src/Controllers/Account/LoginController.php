@@ -14,6 +14,7 @@ use Exception;
 use Illuminate\Http\JsonResponse;
 use InnoShop\Common\Services\CartService;
 use InnoShop\Front\Requests\LoginRequest;
+use Laravel\Socialite\Facades\Socialite;
 use Symfony\Component\HttpKernel\Exception\NotAcceptableHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
@@ -67,4 +68,13 @@ class LoginController extends Controller
             return json_fail($e->getMessage());
         }
     }
+
+    // public function google_redirect() {
+    //     return Socialite::driver('google')->redirect();
+    // }
+
+    // public function google_callback(){
+    //     $googleUser = Socialite::driver('google')->user();
+    //     dd($googleUser);
+    // }
 }

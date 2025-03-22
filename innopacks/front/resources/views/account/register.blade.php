@@ -31,6 +31,11 @@
         <button type="button" class="btn btn-primary form-submit btn-lg">{{ __('front/register.register_submit') }}</button>
         <a href="{{ front_route('login.index') }}{{ request('iframe') ? '?iframe=true' : '' }}">{{ __('front/register.have_account') }} <i class="bi bi-arrow-up-right-square"></i></a>
       </div>
+      
+      <div class="btn-submit">
+        <button type="button" class="btn btn-primary form-submit btn-lg">{{ __('front/register.register_submit') }}</button>
+        <a href="{{ front_route('login.index') }}{{ request('iframe') ? '?iframe=true' : '' }}">{{ __('front/register.have_account') }} <i class="bi bi-arrow-up-right-square"></i></a>
+      </div>
 
       @include('account/_social')
 
